@@ -1,0 +1,267 @@
+@charset 'utf-8';
+$rem:124;
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{vertical-align: middle;}
+header{
+    width: 100%;
+    height: 132/$rem*1rem;
+    padding: 0 52/$rem*1rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    a{
+        display: flex;
+        width: 31/$rem*1rem;
+        height: 38/$rem*1rem;
+        img{
+            width: 100%;
+        }
+    }
+    i{
+        display: flex;
+        width: 53/$rem*1rem;
+        height: 41/$rem*1rem;
+        img{
+            width: 100%;
+        }
+    }
+}
+section{
+    width: 100%;
+    padding: 132/$rem*1rem 0 146/$rem*1rem;
+    .banner{
+        width: 100%;
+        height: 663/$rem*1rem;
+        img{
+            width: 100%;
+        }
+    }
+    // 首尔旅游攻略
+    .strategy{
+        width: 100%;
+        padding: 0 52/$rem*1rem;
+        .strategy-tit{
+            color: #333;
+            font-size: 60/$rem*1rem;
+            padding-top: 30/$rem*1rem;
+        }
+        .strategy-xinxi{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            .xinxi-lt{
+                width: 117/$rem*1rem;
+                height: 117/$rem*1rem;
+                display: flex;
+                img{
+                    width: 100%;
+                }
+            }
+            .xinxi-rt{
+                display: flex;
+                flex-direction: column;
+                padding-left: 70/$rem*1rem;
+                .rt-name{
+                    display: flex;
+                    align-items: center;
+                    padding-top: 32/$rem*1rem;
+                    span{
+                        font-size: 48/$rem*1rem;
+                        color: #040404;
+                    }
+                    i{
+                        width: 40/$rem*1rem;
+                        height: 40/$rem*1rem;
+                        display: flex;
+                        margin-left: 32/$rem*1rem;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                .rt-list{
+                    font-size: 48/$rem*1rem;
+                    color: #737373;
+                    span{
+                        color: #040404; 
+                    }
+                }
+                p{
+                    font-size: 36/$rem*1rem;
+                    color: #737373;
+                    padding-bottom: 44/$rem*1rem;
+                }
+            }
+        }
+        // 行程单
+        .trip{
+            width: 100%;
+            .trip-tit{
+                border-top: 1px solid #333;
+                font-size: 48/$rem*1rem;
+                color: #333;
+                text-align: center;
+                padding: 30/$rem*1rem 0;
+            }
+            .biao{
+                width: 100%;
+                border: 1px solid #CDCDCD;
+                border-left: 2px solid #CDCDCD;
+                border-right: 2px solid #CDCDCD;
+                .biao-sh{
+                    width: 100%;
+                    display: flex;
+                    border-top: 1px solid #CDCDCD;
+                    .sh-lt{
+                        width: 166/$rem*1rem;
+                        border-right: 1px solid #CDCDCD;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        span{
+                            font-size: 48/$rem*1rem;
+                            text-align: center;
+                            i{
+                                font-size: 36/$rem*1rem;
+                                color: #666;
+                                font-style: normal;
+                                display: block;
+                            }
+                        }
+                    }
+                    .sh-rt{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 10/$rem*1rem 0 10/$rem*1rem 10/$rem*1rem;
+                        width: 948/$rem*1rem;
+                        span{
+                            color: #41ca7b;
+                            font-size: 36/$rem*1rem;
+                        }
+                        p{
+                            color: #333;
+                            font-size: 36/$rem*1rem;
+                            text-align: justify;
+                        }
+                    }
+                }
+                #bs4,#bs5{
+                    display: none;
+                }
+                .kan {
+                    font-size: 40/$rem*1rem;
+                    border-top: 1px solid #CDCDCD;
+                    border-bottom: 1px solid #CDCDCD;
+                    padding: 40/$rem*1rem 0;
+                    display: flex;
+                    justify-content: center;
+                    a{  
+                        color: #666;
+                        display: flex;
+                        align-items: center;
+                        i{
+                            display: flex;
+                            width: 38/$rem*1rem;
+                            height: 22/$rem*1rem;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+        .sy-banner{
+            width: 100%;
+            height: 770/$rem*1rem;
+            margin: 40/$rem*1rem 0;
+            img{
+                width: 100%;
+            }
+        }
+        .sy-banner-t{
+            width: 100%;
+            height: 770/$rem*1rem;
+            img{
+                width: 100%;
+            }
+        }
+        // 文字介绍
+        .sy-zi{
+            font-size: 38/$rem*1rem;
+            text-align: justify;
+            line-height: 80/$rem*1rem;
+            color: #333;
+            padding: 40/$rem*1rem 0;
+            letter-spacing: 4/$rem*1rem;
+            height: 700/$rem*1rem;
+        }
+    }
+}
+footer{
+    width: 100%;
+    height: 146/$rem*1rem;
+    background: #ececec;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 100;
+    .zan{
+        width: 180/$rem*1rem;
+        height: 90/$rem*1rem;
+        border-radius: 10/$rem*1rem;
+        border: 1px solid #56c083;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            display: flex;
+            width: 32/$rem*1rem;
+            height: 39/$rem*1rem;
+            img{
+                width: 100%;
+            }
+        }
+        span{
+            color: #56c083;
+            font-size: 30/$rem*1rem;
+            padding-left: 16/$rem*1rem;
+        }
+    }
+    input{
+        width: 640/$rem*1rem;
+        height: 90/$rem*1rem;
+        border-radius: 20/$rem*1rem;
+        background: transparent;
+        padding-left: 20/$rem*1rem;
+        line-height: 90/$rem*1rem;
+        outline: none;
+        border: 1px solid #333;
+        font-size: 30/$rem*1rem;
+    }
+    .xing{
+        margin-left: 40/$rem*1rem;  
+        width: 74/$rem*1rem;
+        height: 70/$rem*1rem;
+        display: flex;
+        img{
+            width: 100%;
+        }
+    }
+    .fx{
+        width: 70/$rem*1rem;
+        height: 80/$rem*1rem;
+        display: flex;
+       img{
+           width: 100%;
+       }
+    }
+}

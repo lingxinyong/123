@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maxium-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script>
+		var pixelRatio = 1/window.devicePixelRatio;
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+ pixelRatio +',maxium-scale='+ pixelRatio +',user-scalable=no">');
+		var html = document.getElementsByTagName('html')[0];
+		var pageWidth = html.getBoundingClientRect().width;
+		html.style.fontSize = pageWidth / 10 + 'px';
+	</script>
+</head>
+<body>
+    <header>
+        <div class="header-lt">
+            <span>上海</span>
+            <a href="#"><img src="./img/jiantou.png" alt=""></a>
+        </div>
+        <div class="header-rt">
+            <span><img src="./img/fangdajing.png" alt=""></span>
+            <input type="text" class="sou" placeholder="搜“新西兰”试试">
+        </div>
+    </header>
+    <section>
+        <!-- 轮播图 -->
+        <div class="banner">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <a href="./xiangqingye.html" class="swiper-slide"><img src="./img/banner.png" alt=""></a>
+                    <a href="./xiangqingye.html" class="swiper-slide"><img src="./img/banner-2.png" alt=""></a>
+                    <a href="./xiangqingye.html" class="swiper-slide"><img src="./img/banner-3.png" alt=""></a>
+                </div>
+                <!-- Add Pagination -->
+                <!-- <a href="./xiangqingye.html" class="swiper-pagination"></a> -->
+             </div>
+    
+            <!-- Swiper JS -->
+            <script src="js/swiper.min.js"></script>
+            
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                });
+            </script>
+        </div>
+        <!-- 热门景点 -->
+        <div class="popular" id="po">
+            <div class="popular-tit">热门景点</div>
+            <div class="popular-city" id="city">
+                <a href="#" class="act" id="shanghai">上海</a>
+                <a href="#" id="chengdu">成都</a>
+                <a href="#" id="beijing">北京</a>
+                <a href="#" id="sanya">三亚</a>
+            </div>
+            <ul class="list" id="l1">
+                <li>
+                    <a href="./xiangqingye.html" class="tp"><img src="./img/500366670.png" alt=""></a>
+                    <a href="./xiangqingye.html" class="zi">
+                        <span>上海迪士尼乐园</span>
+                        <i>Disney 家庭旅游必去</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./xiangqingye.html" class="tp"><img src="./img/500250197.png" alt=""></a>
+                    <a href="./xiangqingye.html" class="zi">
+                        <span>东方明珠电视塔</span>
+                        <i>感受高空云端漫步上海</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./xiangqingye.html" class="tp"><img src="./img/e0c0dfab5d0585102cae8ec84d74cc0a.png" alt=""></a>
+                    <a href="./xiangqingye.html" class="zi">
+                        <span>古镇朱家角</span>
+                        <i>逛沪上第一明清北大街</i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="list" id="l2">
+                <li>
+                    <a href="./xiangqingye.html" class="tp"><img src="./img/500250197.png" alt=""></a>
+                    <a href="./xiangqingye.html" class="zi">
+                        <span>成都水上乐园</span>
+                        <i>放假组团必去</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./xiangqingye.html" class="tp"><img src="./img/500250197.png" alt=""></a>
+                    <a href="./xiangqingye.html" class="zi">
+                        <span>成都大树电视塔</span>
+                        <i>感受高空云端漫步上海</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./xiangqingye.html" class="tp"><img src="./img/500250197.png" alt=""></a>
+                    <a href="./xiangqingye.html" class="zi">
+                        <span>古镇朱家角</span>
+                        <i>逛沪上第一明清北大街</i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="list" id="l3">
+                <li>
+                    <a href="./xiangqingye.html" class="tp"><img src="./img/e0c0dfab5d0585102cae8ec84d74cc0a.png" alt=""></a>
+                    <a href="./xiangqingye.html" class="zi">
+                        <span>北京迪士尼乐园</span>
+                        <i>Disney 家庭旅游必去</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./xiangqingye.html" class="tp"><img src="./img/e0c0dfab5d0585102cae8ec84d74cc0a.png" alt=""></a>
+                    <a href="./xiangqingye.html" class="zi">
+                        <span>万里长城电视塔</span>
+                        <i>感受高空云端漫步上海</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./xiangqingye.html" class="tp"><img src="./img/e0c0dfab5d0585102cae8ec84d74cc0a.png" alt=""></a>
+                    <a href="./xiangqingye.html" class="zi">
+                        <span>古镇朱家角</span>
+                        <i>逛沪上第一明清北大街</i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="list" id="l4">
+                <li>
+                    <a href="./xiangqingye.html" class="tp"><img src="./img/500366670.png" alt=""></a>
+                    <a href="./xiangqingye.html" class="zi">
+                        <span>三亚迪士尼乐园</span>
+                        <i>Disney 家庭旅游必去</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./xiangqingye.html" class="tp"><img src="./img/500366670.png" alt=""></a>
+                    <a href="./xiangqingye.html" class="zi">
+                        <span>东方明珠电视塔</span>
+                        <i>感受高空云端漫步上海</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./xiangqingye.html" class="tp"><img src="./img/500366670.png" alt=""></a>
+                    <a href="./xiangqingye.html" class="zi">
+                        <span>古镇朱家角</span>
+                        <i>逛沪上第一明清北大街</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 城市新玩法 -->
+        <div class="city-news">
+            <div class="city-news-tit">
+                <h3>城市新玩法</h3>
+                <a href="#">查看更多推荐 ></a>
+            </div>
+            <div class="city-news-banner"><img src="./img/banner-2.png" alt=""></div>
+            <div class="city-news-words">
+                <div class="words-tit">老灵的里弄上海</div>
+                <p>果里弄是一副画卷，展开它，你看到的会是上海人生动的邻里日常。里弄见证着这个城市的百年风雨，也承载着几代人对“家”的记忆。</p>
+            </div>
+        </div>
+         <!-- 城市新玩法 -->
+         <div class="city-news">
+            <div class="city-news-tit">
+                <h3>城市新玩法</h3>
+                <a href="#">查看更多推荐 ></a>
+            </div>
+            <div class="city-news-banner"><img src="./img/banner-2.png" alt=""></div>
+            <div class="city-news-words">
+                <div class="words-tit">老灵的里弄上海</div>
+                <p>果里弄是一副画卷，展开它，你看到的会是上海人生动的邻里日常。里弄见证着这个城市的百年风雨，也承载着几代人对“家”的记忆。</p>
+            </div>
+        </div>
+        <!-- 城市新玩法 -->
+        <div class="city-news" id="cy1">
+            <div class="city-news-tit">
+                <h3>城市新玩法</h3>
+                <a href="#">查看更多推荐 ></a>
+            </div>
+            <div class="city-news-banner"><img src="./img/banner-2.png" alt=""></div>
+            <div class="city-news-words">
+                <div class="words-tit">老灵的里弄上海</div>
+                <p>果里弄是一副画卷，展开它，你看到的会是上海人生动的邻里日常。里弄见证着这个城市的百年风雨，也承载着几代人对“家”的记忆。</p>
+            </div>
+        </div>
+        <!-- 城市新玩法 -->
+        <div class="city-news" id="cy2">
+            <div class="city-news-tit">
+                <h3>城市新玩法</h3>
+                <a href="#">查看更多推荐 ></a>
+            </div>
+            <div class="city-news-banner"><img src="./img/banner-2.png" alt=""></div>
+            <div class="city-news-words">
+                <div class="words-tit">老灵的里弄上海</div>
+                <p>果里弄是一副画卷，展开它，你看到的会是上海人生动的邻里日常。里弄见证着这个城市的百年风雨，也承载着几代人对“家”的记忆。</p>
+            </div>
+        </div>
+        <!-- 城市新玩法 -->
+        <div class="city-news" id="cy3">
+            <div class="city-news-tit">
+                <h3>城市新玩法</h3>
+                <a href="#">查看更多推荐 ></a>
+            </div>
+            <div class="city-news-banner"><img src="./img/banner-2.png" alt=""></div>
+            <div class="city-news-words">
+                <div class="words-tit">老灵的里弄上海</div>
+                <p>果里弄是一副画卷，展开它，你看到的会是上海人生动的邻里日常。里弄见证着这个城市的百年风雨，也承载着几代人对“家”的记忆。</p>
+            </div>
+        </div>
+        <!-- 下拉刷新 -->
+        <div class="drop">
+            <a id="btn">
+                <i><img src="./img/xia.png" alt=""></i>
+                <span>下拉刷新，展示更多</span>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-list">
+            <a href="#"><i><img src="./img/shouye.png" alt=""></i><span>首页</span></a>
+            <a href="#"><i><img src="./img/mudidi.png" alt=""></i><span>目的地</span></a>
+            <a href="#"><i><img src="./img/faxian.png" alt=""></i><span>发现</span></a>
+            <a href="#"><i><img src="./img/wo.png" alt=""></i><span>我</span></a>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

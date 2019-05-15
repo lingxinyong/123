@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maxium-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/xiangqingye.css">
+    <title>详情页</title>
+    <script>
+        var pixelRatio = 1/window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+ pixelRatio +',maxium-scale='+ pixelRatio +',user-scalable=no">');
+        var html = document.getElementsByTagName('html')[0];
+        var pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 10 + 'px';
+    </script>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./img/xle.png" alt=""></a>
+        <i><img src="./img/fdj.png" alt=""></i>
+    </header>
+    <section>
+        <div class="banner"><img src="./img/02.png" alt=""></div>
+        <!-- 首尔旅游攻略 -->
+        <div class="strategy">
+            <div class="strategy-tit">【2018 | 首尔旅游攻略】</div>
+            <div class="strategy-xinxi">
+                <div class="xinxi-lt"><img src="./img/xinxi.png" alt=""></div>
+                <div class="xinxi-rt">
+                    <div class="rt-name">
+                        <span>小狮妹</span>
+                        <i><img src="./img/xb.png" alt=""></i>
+                    </div>
+                    <div class="rt-list"><span>66</span>回复 | <span>431</span>收藏 | <span>5684</span>浏览</div>
+                    <p>发布于2018-03-12 10：32</p>
+                </div>
+            </div>
+            <!-- 行程单 -->
+            <div class="trip">
+                <div class="trip-tit">行程单</div>
+                <div class="biao">
+                    <div class="biao-sh">
+                        <div class="sh-lt">
+                            <span>D1<i>04-05</i></span>
+                        </div>
+                        <div class="sh-rt">
+                            <span>上海-首尔</span>
+                            <p>在阿里旅行上买机票，一开始看的时候是南航，早上8:30起飞，回来那天18:55起飞，感觉时间都是极好的</p>
+                        </div>
+                    </div>
+                    <div class="biao-sh">
+                        <div class="sh-lt">
+                            <span>D2<i>04-06</i></span>
+                        </div>
+                        <div class="sh-rt">
+                            <p>首尔的酒店，一开始是在携程上看的，按照地理位置，酒店星级数，看中了一家位于明洞的“明洞天空花园中央酒店”，4晚2700+，而且此酒店还有公主房，可惜没订到。</p>
+                        </div>
+                    </div>
+                    <div class="biao-sh">
+                        <div class="sh-lt">
+                            <span>D3<i>04-07</i></span>
+                        </div>
+                        <div class="sh-rt">
+                            <p>签证，很简单，相信大部分同学们都是这样，taobao拍上韩 国签证，小歪找的那家，258一人，上海地区还不需要财产 证明，只需要护照，照片，身份证，填表格就行了</p>
+                        </div>
+                    </div>
+                    <div class="biao-sh" id="bs4">
+                        <div class="sh-lt">
+                            <span>D4<i>04-08</i></span>
+                        </div>
+                        <div class="sh-rt">
+                            <p>在阿里旅行上买机票，一开始看的时候是南航，早上8:30起飞，回来那天18:55起飞，感觉时间都是极好的</p>
+                        </div>
+                    </div>
+                    <div class="biao-sh" id="bs5">
+                        <div class="sh-lt">
+                            <span>D5<i>04-09</i></span>
+                        </div>
+                        <div class="sh-rt">
+                            <p>在阿里旅行上买机票，一开始看的时候是南航，早上8:30起飞，回来那天18:55起飞，感觉时间都是极好的</p>
+                        </div>
+                    </div>
+                    <p class="kan" id="kan"><a id="ck">查看全部五日行程&nbsp;<i><img src="./img/9.png" alt=""></i></a></p>
+                </div>
+            </div>
+            <script src="./js/xiangqingye.js"></script>
+            <!-- banner -->
+            <div class="sy-banner"><img src="./img/ban.png" alt=""></div>
+            <div class="sy-banner-t"><img src="./img/ban-2.png" alt=""></div>
+            <!-- 文字介绍 -->
+            <div class="sy-zi">1. 通讯：去某宝上买韩国电话卡最方便，大概10元/天，别再买蛋了，那个东西又重又麻烦价格跟电话卡差不多。<br> 2. 机场市区交通：无论仁川&金浦又快又便宜的方式是地铁；巴士时间较长价格比地铁贵些；打车巨贵打不起。所以我一般是坐地铁从仁川到市区&坐大巴从市区回机场（视个人情况而定，如果酒店附近有机场巴士车站，你又不怎么赶时间，大巴还是非常省力的）。机场巴士：通往市区各酒店的豪华大巴90元左右，高峰时段要2个小时到机场。
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="zan">
+            <i><img src="./img/zan.png" alt=""></i>
+            <span>赞229</span>
+        </div>
+        <input type="text" placeholder="回复楼主">
+        <a href="#" class="xing"><img src="./img/xing.png" alt=""></a>
+        <a href="#" class="fx"><img src="./img/fenxiang.png" alt=""></a>
+    </footer>
+</body>
+</html>
